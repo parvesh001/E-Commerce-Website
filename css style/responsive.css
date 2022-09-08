@@ -1,0 +1,527 @@
+/* 320px — 480px: Mobile devices. */
+/* 481px — 768px: iPads, Tablets. */
+/* 769px — 1024px: Small screens, laptops. */
+/* 1025px — 1200px: Desktops, large screens. */
+/* 1201px and more — Extra large screens, TV. */
+
+/* ================================
+     FOR MOBILES and IPAD NAV LINKS
+   ================================ */
+@media screen and (min-width:320px) and (max-width:768px){
+    .nav {
+        flex-direction: column;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        background: #c6cbcf;
+        width: 50%;
+        max-width: 300px;
+        row-gap: 2rem;
+        transition: all .4s ease-in-out;
+    }
+
+    #Xmark {
+        display: block;
+        align-self: flex-start;
+    }
+
+    .mobile{
+        display: initial;
+    }
+}
+
+
+
+/* =================
+     FOR MOBILES
+   ================= */
+@media only screen and (min-width:320px) and (max-width:480px){
+ 
+    /* global */
+    .sec-mrgn{
+        margin:10px 0;
+    }
+    .hero-pd{
+        padding:0 1.5rem;
+    }
+
+    .header-pd{
+        padding: .33rem;
+    }
+
+    .sec-pd {
+        padding: 15px 20px;
+    }
+
+    .h1{
+        font-size:1.5rem;
+    }
+    .h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    .h4{
+        font-size: 1.2rem;
+    }
+    .p{
+        font-size: .9rem;
+    }
+
+   /* ======================================
+               HOME PAGE
+   ====================================== */
+
+   /* =============== HEADER ================ */
+    .logo{
+        width: 40px;
+    }
+
+    #Xmark {
+        padding: 1rem;
+        font-size: 20px;
+    }
+
+    .mobile{
+        font-size: 20px;
+    }
+
+    /* =============== HERO ================ */
+    #hero {
+        height: 30vh;
+        padding: 0 1.5em;
+    }
+    #hero h4 {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    #hero h2 {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    #hero h1 {
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+    #hero p {
+        font-size: 14px;
+    }
+    button.transparent {
+        padding: .2em .5em;
+        font-size: 14px;
+    }
+
+
+    /* =============== FEATURE SECTION ================ */
+    #feature {
+        justify-content: center;
+        row-gap: 10px;
+    }
+ 
+    /* =============== FEATURED PRODUCTS ================ */
+    .product-items {
+        padding: 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 440px 440px;
+        row-gap: 30px;
+    }
+
+    /* =============== BANNER ================ */
+    #banner-1 {
+        height: 20vh;
+    }
+    button.gray-btn {
+        padding: .2em .5em;
+        font-size: 14px;
+    }
+
+    /* =============== BANNER 2 ================ */
+    #banner-2 {
+        flex-direction: column;
+    }
+    .banner-2-child h4 {
+        font-size: 18px;
+    }
+    .banner-2-child h2 {
+        font-size: 22px;
+    }
+    .banner-2-child p {
+        font-size: 14px;
+    }
+
+    /* =============== BANNER 3 ================ */
+    #banner-3 {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    #banner-3 .banner-3-child {
+        height: 120px;
+        width: 100%;
+        padding-left: 0;
+    }
+    #banner-3 .banner-3-child h1 {
+        font-size: 24px;
+    }
+
+    /* =============== NEWS LETTER ================ */
+    #newslatter {
+        flex-direction: column;
+        height: 135px;
+        text-align: center;
+        padding: 1rem;
+    }
+    #newslatter .latter-dis, .input-form {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .latter-dis h2 {
+        line-height: inherit;
+        font-size: 22px;
+    }
+    .latter-dis p {
+        font-size: 14px;
+    }
+    #newslatter .input-form {
+        width: 70%;
+    }
+    .input-form input {
+        padding: 3px;
+    }
+    .input-form button {
+        padding: .2em .5em;
+        font-size: 14px;
+    }
+
+    /* =============== USSERS' REVIEWS ================ */
+    #review-art .title h1 {
+        font-size: 22px;
+    }
+    #review-art .person {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* =============== FOOTER ================ */
+    .footer-information {
+        flex-direction: column;
+    }
+
+
+
+    /* ====================
+             SHOPE PAGE
+       ==================== */
+    
+    
+    #shop-hero {
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    #shop-hero h1 {
+        font-size: 24px;
+    }
+    #shop-hero p {
+        font-size: 16px;
+    }
+
+
+
+    /* ====================
+             BLOG PAGE
+       ==================== */
+    
+     .sec-pd2 {
+        padding: 2em 1em 0;
+    }
+    .mrgn-bottom {
+        margin-bottom: 35px;
+    }
+
+     #hero.blog-page {
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    #hero.blog-page h1 {
+        font-size: 24px;
+    }
+    #hero.blog-page p {
+        font-size: 16px;
+    }
+
+    #blog .blog-box {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+    #blog .blog-box h1 {
+        position: absolute;
+        left: 9px;
+        top: -51px;
+        font-size: 50px;
+        font-weight: 700;
+        color: #504f4f;
+        z-index: -19;
+    }
+
+
+    /* ====================
+          ABOUT US PAGE
+       ==================== */
+    
+     #hero.contact-page {
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    #hero.contact-page h1 {
+        font-size: 24px;
+    }
+    #hero.contact-page p {
+        font-size: 16px;
+    }
+       
+    #about {
+        flex-direction: column;
+    }
+    #about .about-img {
+        width: 100%;
+    }
+    #about .aboutD {
+        width: 100%;
+    }
+
+    #aboutV h1 {
+        font-size: 24px;
+    }
+
+    #aboutV video {
+        width: 100%;
+    }
+
+
+    /* ====================
+          CONTACT US PAGE
+       ==================== */
+
+     #hero.about-page {
+        height: 30vh;
+        padding: 1.5rem;
+    }
+    #hero.about-page h1 {
+        font-size: 24px;
+    }
+    #hero.about-page p {
+        font-size: 16px;
+    }
+
+    #contact {
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    #contact .information {
+        width: 100%;
+    }
+    #contact .location {
+        width: 100%;
+    }
+
+    #contact-form {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    #contact-form .inputs {
+        width: 100%;
+    }
+    #contact-form .founders {
+        width: 100%;
+    }
+    .mrgn-x {
+        margin: 0px 1rem;
+    }
+
+
+
+    /* ====================
+            CART
+       ==================== */
+
+     #cart{
+        overflow-x: auto;
+     }
+
+     #finalise {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    #finalise .coupan {
+        width: 100%;
+    }
+    #finalise .cartT {
+        width: 100%;
+    }
+    
+}
+
+
+
+/* =================
+     FOR TABS
+   ================= */
+   @media only screen and (min-width:481px) and (max-width:768px){
+
+    /* GLOBAL */
+    .sec-pd{
+        padding: 4rem 4rem 0;
+    }
+    .sec-mrgn{
+        margin: 4rem 0 0;
+    }
+
+    .h1{
+        font-size: 2.5rem;
+    }
+
+    /* ======================================
+               HOME PAGE
+   ====================================== */
+
+    /* =============== HEADER ================ */
+
+    .logo{
+        width: 60px;
+    }
+
+    .mobile{
+        font-size: 30px;
+    }
+    
+    #Xmark{
+        font-size: 30px;
+    }
+
+    .nav li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    /* =============== HERO ================ */
+    #hero{
+        height: 50vh;
+    }
+
+    #hero h4{
+        font-size: 30px;
+    }
+    #hero h2{
+        font-size: 34px;
+    }
+    #hero h1{
+        font-size: 44px;
+    }
+
+    .hero-pd{
+        padding: 4em;
+    }
+
+    button.transparent {
+        padding: .5em 1em;
+        font-size: 18px;
+    }
+
+    /* =============== FEATURE SECTION ================ */
+
+    #feature {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    /* =============== FEATURED PRODUCTS ================ */
+
+    .product-items {
+        padding: 0;
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+
+    /* =============== BANNER-2 ================ */
+    #banner-2 .banner-2-child {
+        height: 24vh;
+    }
+    .banner-2-child h4 {
+        font-size: 18px;
+    }
+    .banner-2-child h2 {
+        font-size: 24px;
+    }
+    button.transparent {
+        font-size: 16px;
+    }
+
+    /* =============== BANNER-2 ================ */
+    #banner-3 .banner-3-child h1 {
+        font-size: 24px;
+    }
+
+
+    /* =============== NEWSLETTET SECTION ================ */
+    #newslatter {
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* =============== REVIEW SECTION ================ */
+    #review-art .person {
+        width: 100%;
+    }
+   }
+
+
+
+/* ===============================
+     FOR SMALL SCREENS AND LAPTOPS
+   =============================== */
+   @media only screen and (min-width:769px) and (max-width:1024px){
+
+    .h1{
+        font-size:45px;
+    }
+
+    /* =============== FEATURES ================ */
+    #feature {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .product-items {
+        padding: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+    }
+
+    /* =============== REVIEWS ================ */
+    #review-art .person {
+        width: 100%;
+    }
+   }
+
+
+
